@@ -2,6 +2,9 @@
 
 import random, pdb, sys, math
 
+def Algo(array):
+	return divAndConAlgo(array)
+
 def divAndConAlgo(array):		# main function
 	sumMax = 0
 	mid = 0
@@ -13,8 +16,6 @@ def divAndConAlgo(array):		# main function
 		
 	else:
 		mid = int(math.floor(len(array) / 2))		# // is floor division?
-
-		pdb.set_trace()
 
 		sum_left = divAndConAlgo(array[0:mid])
 		if mid+1 == len(array)-1:
